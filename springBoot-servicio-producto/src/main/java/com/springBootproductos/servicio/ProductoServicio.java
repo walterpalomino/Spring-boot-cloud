@@ -4,11 +4,13 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.springBootproductos.entity.Category;
 import com.springBootproductos.entity.Product;
 import com.springBootproductos.repository.ProductRepository;
 
+@Service
 public class ProductoServicio implements ProductoDao<Product, Category>{
 
 	@Autowired
@@ -65,15 +67,15 @@ public class ProductoServicio implements ProductoDao<Product, Category>{
 		
 	}
 
-	public Product nameObjeto(String name) {
-		
-		Product p = repo.findByNameProducto(name);
-		if(p != null)
-		{
-			return p;
-		}
-		return null;
-	}
+//	public Product nameObjeto(String name) {
+//		
+//		Product p = repo.findByNameProducto(name);
+//		if(p != null)
+//		{
+//			return p;
+//		}
+//		return null;
+//	}
 	
 	
 }

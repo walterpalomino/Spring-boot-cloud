@@ -13,6 +13,6 @@ public interface ProductoDao<T,C> {
 	public T updateObjeto(T objeto, Long id);
 	public Boolean deleteObjeto(Long id);
 	public List<T> listCategory(C c);
-	public T nameObjeto(String name);
+	
 
 }
