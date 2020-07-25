@@ -1,0 +1,22 @@
+
+server:
+  port: 8090
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/walterpalomino/Spring-boot-cloud.git
+          searchPath: spring-config-data
+          username: walterpalomino
+          password: Hola2020$
+          
+  security:
+    user:
+      name: root
+      password: hola
+      
+          
+          
+          
